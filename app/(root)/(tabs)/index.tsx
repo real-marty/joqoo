@@ -10,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text className="font-bold text-gl my-10">
+      <Text className="font-bold text-gl my-10 font-quicksand">
         Vítejte v aplikace Host do domu
       </Text>
       <Link href={"/sign-log-in"}>Přihlásit & Registrovat</Link>

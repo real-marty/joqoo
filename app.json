@@ -13,7 +13,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
@@ -28,9 +28,27 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff",
+          "enableFullScreenImage_legacy": true
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            {
+              "./assets/fonts/Caveat-Bold.ttf": ["Caveat-Bold"],
+              "./assets/fonts/Caveat-Medium.ttf": ["Caveat-Medium"],
+              "./assets/fonts/Caveat-Regular.ttf": ["Caveat-Regular"],
+              "./assets/fonts/Caveat-SemiBold.ttf": ["Caveat-SemiBold"],
+              "./assets/fonts/Quicksand-Bold.ttf": ["Quicksand-Bold"],
+              "./assets/fonts/Quicksand-Medium.ttf": ["Quicksand-Medium"],
+              "./assets/fonts/Quicksand-Regular.ttf": ["Quicksand-Regular"],
+              "./assets/fonts/Quicksand-SemiBold.ttf": ["Quicksand-SemiBold"],
+              "./assets/fonts/Quicksand-Light.ttf": ["Quicksand-Light"]
+            }
+          ]
         }
       ]
     ],
