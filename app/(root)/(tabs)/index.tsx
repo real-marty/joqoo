@@ -70,7 +70,7 @@ const Home = () => {
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={
           loading ? (
-            <ActivityIndicator size="large" className="text-primary-300 mt-5" />
+            <ActivityIndicator size="large" className="text-primary-500 mt-5" />
           ) : (
             <NoResults />
           )
@@ -85,10 +85,10 @@ const Home = () => {
                 />
 
                 <View className="flex flex-col items-start ml-2 justify-center">
-                  <Text className="text-xs font-rubik text-black-100">
+                  <Text className="text-xs font-quicksand text-zinc-600">
                     Dobré ráno
                   </Text>
-                  <Text className="text-base font-rubik-medium text-black-300">
+                  <Text className="text-base font-quicksand-medium text-black">
                     {user?.name}
                   </Text>
                 </View>
@@ -98,20 +98,20 @@ const Home = () => {
 
             <Search />
 
-            <View className="my-5">
+            <View className="my-3">
               <View className="flex flex-row items-center justify-between">
-                <Text className="text-xl font-rubik-bold text-black-300">
+                <Text className="text-2xl font-caveat-bold text-primary-500 p-1">
                   Doporučené
                 </Text>
                 <TouchableOpacity>
-                  <Text className="text-base font-rubik-bold text-primary-300">
+                  <Text className="text-base font-quicksand-bold text-black">
                     Zobrazit vše
                   </Text>
                 </TouchableOpacity>
               </View>
 
               {latestPropertiesLoading ? (
-                <ActivityIndicator size="large" className="text-primary-300" />
+                <ActivityIndicator size="large" className="text-primary-500" />
               ) : !latestProperties || latestProperties?.length === 0 ? (
                 <NoResults />
               ) : (
@@ -133,13 +133,13 @@ const Home = () => {
 
             {/* <Button title="seed" onPress={seed} />  */}
 
-            <View className="mt-5">
+            <View className="mt-3">
               <View className="flex flex-row items-center justify-between">
-                <Text className="text-xl font-rubik-bold text-black-300">
+                <Text className="text-2xl font-caveat-bold text-primary-500  p-1">
                   Naše doporučení
                 </Text>
                 <TouchableOpacity>
-                  <Text className="text-base font-rubik-bold text-primary-300">
+                  <Text className="text-base font-quicksand-bold text-black">
                     Zobrazit vše
                   </Text>
                 </TouchableOpacity>
