@@ -3,128 +3,128 @@ import images from "./images";
 
 export const cards = [
   {
-    title: "Card 1",
-    location: "Location 1",
+    title: "Karta 1",
+    location: "Lokalita 1",
     price: "$100",
     rating: 4.8,
-    category: "house",
+    category: "dům",
     image: images.newYork,
   },
   {
-    title: "Card 2",
-    location: "Location 2",
+    title: "Karta 2",
+    location: "Lokalita 2",
     price: "$200",
     rating: 3,
-    category: "house",
+    category: "dům",
     image: images.japan,
   },
   {
-    title: "Card 3",
-    location: "Location 3",
+    title: "Karta 3",
+    location: "Lokalita 3",
     price: "$300",
     rating: 2,
-    category: "flat",
+    category: "byt",
     image: images.newYork,
   },
   {
-    title: "Card 4",
-    location: "Location 4",
+    title: "Karta 4",
+    location: "Lokalita 4",
     price: "$400",
     rating: 5,
-    category: "villa",
+    category: "vila",
     image: images.japan,
   },
 ];
 
 export const featuredCards = [
   {
-    title: "Featured 1",
-    location: "Location 1",
+    title: "Doporučená 1",
+    location: "Lokalita 1",
     price: "$100",
     rating: 4.8,
     image: images.newYork,
-    category: "house",
+    category: "dům",
   },
   {
-    title: "Featured 2",
-    location: "Location 2",
+    title: "Doporučená 2",
+    location: "Lokalita 2",
     price: "$200",
     rating: 3,
     image: images.japan,
-    category: "flat",
+    category: "byt",
   },
 ];
 
 export const categories = [
-  { title: "All", category: "All" },
-  { title: "Houses", category: "House" },
-  { title: "Condos", category: "Condos" },
-  { title: "Duplexes", category: "Duplexes" },
-  { title: "Studios", category: "Studios" },
-  { title: "Villas", category: "Villa" },
-  { title: "Apartments", category: "Apartments" },
-  { title: "Townhomes", category: "Townhomes" },
-  { title: "Others", category: "Others" },
+  { title: "Vše", category: "Vše" },
+  { title: "Domy", category: "Dům" },
+  { title: "Kondominia", category: "Kondominium" },
+  { title: "Duplexy", category: "Duplex" },
+  { title: "Studio", category: "Studio" },
+  { title: "Vily", category: "Vila" },
+  { title: "Byty", category: "Byt" },
+  { title: "Městské domy", category: "Řadový dům" },
+  { title: "Ostatní", category: "Jiné" },
 ];
 
 export const settings = [
   {
-    title: "My Bookings",
+    title: "Moje rezervace",
     icon: icons.calendar,
   },
   {
-    title: "Payments",
+    title: "Platby",
     icon: icons.wallet,
   },
   {
-    title: "Profile",
+    title: "Profil",
     icon: icons.person,
   },
   {
-    title: "Notifications",
+    title: "Upozornění",
     icon: icons.bell,
   },
   {
-    title: "Security",
+    title: "Zabezpečení",
     icon: icons.shield,
   },
   {
-    title: "Language",
+    title: "Jazyk",
     icon: icons.language,
   },
   {
-    title: "Help Center",
+    title: "Centrum nápovědy",
     icon: icons.info,
   },
   {
-    title: "Invite Friends",
+    title: "Pozvat přátele",
     icon: icons.people,
   },
 ];
 
 export const facilities = [
   {
-    title: "Laundry",
+    title: "Prádelna",
     icon: icons.laundry,
   },
   {
-    title: "Car Parking",
+    title: "Parkování",
     icon: icons.carPark,
   },
   {
-    title: "Sports Center",
+    title: "Sportovní centrum",
     icon: icons.run,
   },
   {
-    title: "Cutlery",
+    title: "Příbory",
     icon: icons.cutlery,
   },
   {
-    title: "Gym",
+    title: "Posilovna",
     icon: icons.dumbell,
   },
   {
-    title: "Swimming pool",
+    title: "Bazén",
     icon: icons.swim,
   },
   {
@@ -132,7 +132,7 @@ export const facilities = [
     icon: icons.wifi,
   },
   {
-    title: "Pet Center",
+    title: "Centrum pro mazlíčky",
     icon: icons.dog,
   },
 ];
