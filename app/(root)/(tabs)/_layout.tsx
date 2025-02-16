@@ -38,7 +38,7 @@ const TabsNavigation = () => {
         tabBarShowLabel: false,
         tabBarStyle: {
           backgroundColor: "white",
-          borderTopColor: "#fde8eb",
+          borderTopColor: "#fdf4f5",
           borderTopWidth: 1,
           minHeight: 70,
           position: "absolute",
