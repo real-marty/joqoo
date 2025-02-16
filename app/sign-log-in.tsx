@@ -1,16 +1,38 @@
 //! CONSTANTS
 import icons from "@/constants/icons";
 import images from "@/constants/images";
+import { useGlobalContext } from "@/context/global-context";
+
+//? APPWRITE IMPORTS
+import { signLogIn } from "@/lib/appwrite";
+import { Redirect } from "expo-router";
 
 //! REACT NATIVE IMPORTS
-import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import {
+  Alert,
+  Image,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 //! THIRD-PARTY LIBRARIES
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const SignLogIn = () => {
-  const handleSignLogIn = () => {
-    console.log("SignLogIn");
+  const { refetch, loading, isLoggedIn } = useGlobalContext();
+
+  if (isLoggedIn && !loading) {
+    return <Redirect href={"/"} />;
+  }
+  const handleSignLogIn = async () => {
+    const loginResult = await signLogIn();
+    if (loginResult) {
+      refetch({});
+    } else {
+      Alert.alert("Chyba", "Přihlášení se nezdařilo");
+    }
   };
 
   return (
@@ -29,9 +51,9 @@ const SignLogIn = () => {
             </Text>
           </Text>
           <Text className="text-2xl font-quicksand-bold text-black text-center mt-2">
-            Objevte svět, kde příběh začíná. {"\n"}
+            Najděte si nový domov. {"\n"}
             <Text className="font-caveat-semibold text-4xl text-primary-500">
-              Domov, kde sny ožívají. {"\n"}
+              Ještě dnes {"\n"}
             </Text>
           </Text>
           <Text className="font-quicksand-medium text-center text-lg mb-2">
