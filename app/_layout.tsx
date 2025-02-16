@@ -5,6 +5,7 @@ import "./global.css";
 
 import { useFonts } from "expo-font";
 import { useEffect } from "react";
+import { GlobalContextProvider } from "@/context/global-context";
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
@@ -27,5 +28,9 @@ export default function RootLayout() {
 
   if (!fontsLoaded) return null;
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <GlobalContextProvider>
+      <Stack screenOptions={{ headerShown: false }} />
+    </GlobalContextProvider>
+  );
 }
