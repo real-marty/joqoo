@@ -58,7 +58,7 @@ const Explore = () => {
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={
           loading ? (
-            <ActivityIndicator size="large" className="text-primary-300 mt-5" />
+            <ActivityIndicator size="large" className="text-primary-500 mt-5" />
           ) : (
             <NoResults />
           )
@@ -68,13 +68,17 @@ const Explore = () => {
             <View className="flex flex-row items-center justify-between mt-5">
               <TouchableOpacity
                 onPress={() => router.back()}
-                className="flex flex-row bg-primary-200 rounded-full size-11 items-center justify-center"
+                className="flex flex-row bg-primary-500 rounded-full size-11 items-center justify-center"
               >
-                <Image source={icons.backArrow} className="size-5" />
+                <Image
+                  source={icons.backArrow}
+                  className="size-5"
+                  tintColor="#ffffff"
+                />
               </TouchableOpacity>
 
-              <Text className="text-base mr-2 text-center font-rubik-medium text-black-300">
-                Search for Your Ideal Home
+              <Text className="text-2xl mr-2 text-center font-caveat-semibold text-zinc-600 p-1">
+                Hledejte svůj ideální domov
               </Text>
               <Image source={icons.bell} className="w-6 h-6" />
             </View>
@@ -84,8 +88,8 @@ const Explore = () => {
             <View className="mt-5">
               <Filters />
 
-              <Text className="text-xl font-rubik-bold text-black-300 mt-5">
-                Found {properties?.length} Properties
+              <Text className="text-xl font-quicksand-bold text-zinc-600 mt-5">
+                Nalezeno {properties?.length} nemovitostí
               </Text>
             </View>
           </View>
