@@ -9,6 +9,7 @@ import {
 import { useEffect } from "react";
 import { router, useLocalSearchParams } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
+import "react-native-url-polyfill/auto";
 
 import icons from "@/constants/icons";
 
