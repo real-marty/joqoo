@@ -11,7 +11,7 @@ import { openAuthSessionAsync } from "expo-web-browser";
 import * as Linking from "expo-linking";
 
 export const appwrite = {
-  platform: "com.joqoo.live",
+  platform: "com.zcu.joqoo",
   endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT!,
   projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID!,
   databaseId: process.env.EXPO_PUBLIC_APPWRITE_DATABASE_ID!,
