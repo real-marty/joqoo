@@ -164,6 +164,7 @@ export async function getPropertyById({ id }: { id: string }) {
       appwrite.propertiesCollectionId,
       id,
     );
+
     return result;
   } catch (error) {
     console.error(error);
